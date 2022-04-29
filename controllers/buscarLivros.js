@@ -10,7 +10,7 @@ const buscarLivros = () => {
 
        const inputCategoria = read.question('Digite uma categoria conforme a tabela acima: ')
 
-       const confirmacao = read.question('Tem certeza? S/N').toUpperCase()
+       const confirmacao = read.question('Tem certeza? S/N: ').toUpperCase()
 
        if (confirmacao === 'S') {
            const livrosFiltrados = livros.filter(livro => livro.categoria === inputCategoria)

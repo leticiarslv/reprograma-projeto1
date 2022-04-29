@@ -5,7 +5,7 @@ const listarRecomendados = () => {
     const listarLidos = read.question('Deseja listar os livros que ja foram lidos e recomendados?  S/N: ').toUpperCase()
 
     if (listarLidos === 'S') {
-        const livrosLidos = livros.filter(livro => livro.leu === true)
+        const livrosLidos = livros.filter(livro => livro.leu && livro.recomenda === true)
         console.table(livrosLidos)
 
     }
