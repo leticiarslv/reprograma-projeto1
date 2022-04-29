@@ -33,6 +33,7 @@ switch (resposta) {
         listarLivrosNaoLidos()
     case '5':
         return
+        break
     default:
         console.log('Escolha uma das opções de 1 a 5! ')
         break
